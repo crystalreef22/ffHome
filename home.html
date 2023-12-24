@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Home</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Fira Code' rel='stylesheet'>
+    <style>
+
+    :root { /* everforest */
+        --cbg: #293136;
+        --cborder: #7a8478;
+        --cheader-text: #d3c6aa;
+        --cheader-bg: #3a464c;
+        --cfooter-text: #9da9a0;
+        --cfooter-bg: #3a464c;
+        --ccontent-bg: #333c43;
+        --ccontent-text: #d3c6aa;
+    }
+
+
+    body {
+        background: var(--cbg);
+        color: var(--ccontent-text);
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+    	overflow: hidden;
+        transition: all .5s, background-color .8s;
+        font-family: 'Fira Code';
+    }
+
+
+    main {
+        background: var(--ccontent-bg);
+
+
+        position: relative;
+        border: 3px var(--cborder) solid;
+        border-radius: 10px;
+        
+        padding: 0;
+        margin: auto;
+        top: 50%;
+        transform: translate(0, -50%);
+        width: 50%;
+        min-width:400px;
+        max-width: 2000px;
+        overflow: scroll;
+        scrollbar-width: none;
+    }
+
+    header {
+        background-color: var(--cheader-bg);
+        color: var(--cheader-text);
+        position: relative;
+        width: fill;
+        padding: 5px;
+    }
+
+    footer {
+        background-color: var(--cfooter-bg);
+        color: var(--cfooter-text);
+        position: relative;
+        width: fill;
+        padding: 5px;
+    }
+
+    #content {
+        margin-top: 2px;
+        margin-bottom: 5px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: stretch;
+
+    }
+
+    .item {
+        flex: 1 1 auto;
+        padding: 10px;
+    }
+
+    .item + .item{
+        border-left: solid 2px var(--cborder);
+    }
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <header><i class="fa fa-home"></i> Home</header>
+        <div id="content">
+            <div class="item">
+                ai<br>s
+            </div>
+            <div class="item">
+                bi<br>e
+            </div>
+            <div class="item">
+                ci
+            </div>
+        </div>
+        <footer>as</footer>
+    </main>
+</body>
+
+</html>
